@@ -20,7 +20,7 @@ async function questionsEm() {
         }
     ])
         console.log(employeetype)
-        switch (employeetype.Role) {
+        switch (employeetype.role) {
             case "Intern":
                 employeeAns = await InternQuest(i);
                 employees.push(new Intern(i+2, employeeAns.name, employeeAns.email, employeeAns.school));
